@@ -44,7 +44,9 @@ def crawl():
     if len(queued_links) > 0:
         print(str(len(queued_links)) + ' links in the queue')
         create_jobs()
-
+    else:
+        print("")
+        print("Crawling Completed !!")
 
 create_workers()
 crawl()
